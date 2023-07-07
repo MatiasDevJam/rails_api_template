@@ -1,0 +1,11 @@
+inherit_from: .rubocop_todo.yml
+
+require: rubocop-rails
+
+AllCops:
+  Exclude:
+    - 'db/**/*'
+    - 'script/**/*'
+    - 'bin/**/*'
+    - 'config/**/*'
+    - 'lib/tasks/auto_annotate_models.rake'
